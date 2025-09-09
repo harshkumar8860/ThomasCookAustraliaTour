@@ -1,5 +1,4 @@
 Feature: User Registration on Thomas Cook website
-
   @Negative
   Scenario Outline: Register with invalid details
     Given I open the Thomas Cook website
