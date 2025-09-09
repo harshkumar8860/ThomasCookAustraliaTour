@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>CucumberTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 09 05:37:30 IST 2025</td>
+<td>Started on:</td><td>Tue Sep 09 06:26:45 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>289 seconds (289814 ms)</td>
+<tr><td>Total time:</td><td>198 seconds (198186 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,178 +76,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testRunners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: testRunners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid details", "User Registration on Thomas Cook website"</td>
+<td><div><pre>java.lang.AssertionError: Registration failed expected [true] but found [false]
+	at stepDefinitions.RegistrationSteps.i_should_be_redirected_to_home_page_without_error(RegistrationSteps.java:248)
+	at ✽.I should be redirected to the home page without error(file:///C:/Users/dell/Desktop/project/ThomasCookAutomation/ThomasCookAutomation/src/test/resources/features/registration.feature:35)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1473382848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1473382848'><pre>java.lang.AssertionError: Registration failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at stepDefinitions.RegistrationSteps.i_should_be_redirected_to_home_page_without_error(RegistrationSteps.java:248)
+	at ✽.I should be redirected to the home page without error(file:///C:/Users/dell/Desktop/project/ThomasCookAutomation/ThomasCookAutomation/src/test/resources/features/registration.feature:35)
+</pre></div></td>
+<td>20</td>
+<td>testRunners.RunCucumberTest@2a5c8d3f</td></tr>
+<tr>
 <td title='testRunners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: testRunners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with invalid details", "User Registration on Thomas Cook website"</td>
 <td><div><pre>java.lang.AssertionError: Unexpected error message! expected [true] but found [false]
 	at stepDefinitions.RegistrationSteps.i_should_see_error_messages_for_invalid_inputs(RegistrationSteps.java:242)
 	at ✽.I should see error messages for invalid inputs(file:///C:/Users/dell/Desktop/project/ThomasCookAutomation/ThomasCookAutomation/src/test/resources/features/registration.feature:16)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199687541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace199687541'><pre>java.lang.AssertionError: Unexpected error message! expected [true] but found [false]
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1735222807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1735222807'><pre>java.lang.AssertionError: Unexpected error message! expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at stepDefinitions.RegistrationSteps.i_should_see_error_messages_for_invalid_inputs(RegistrationSteps.java:242)
 	at ✽.I should see error messages for invalid inputs(file:///C:/Users/dell/Desktop/project/ThomasCookAutomation/ThomasCookAutomation/src/test/resources/features/registration.feature:16)
 </pre></div></td>
-<td>20</td>
-<td>testRunners.RunCucumberTest@3eb738bb</td></tr>
+<td>22</td>
+<td>testRunners.RunCucumberTest@2a5c8d3f</td></tr>
 <tr>
 <td title='testRunners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: testRunners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login failed with invalid login ID", "User Login on ThomasCook"</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: sendOTP (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53192/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee60d36f41a0cf8ef827a990ef8fb325
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58469/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1064a9116120ae9ccad1e62b029988f2
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pages.LoginPage.login(LoginPage.java:65)
 	at stepDefinitions.LoginSteps.i_enter_login_details_and_send_otp(LoginSteps.java:28)
 	at ✽.I enter login details &quot;invalidUser9&quot; and send OTP(file:///C:/Users/dell/Desktop/project/ThomasCookAutomation/ThomasCookAutomation/src/test/resources/features/login.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1243531930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1243531930'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: sendOTP (tried for 20 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace15972431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace15972431'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: sendOTP (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53192/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee60d36f41a0cf8ef827a990ef8fb325
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58469/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1064a9116120ae9ccad1e62b029988f2
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at pages.LoginPage.login(LoginPage.java:65)
 	at stepDefinitions.LoginSteps.i_enter_login_details_and_send_otp(LoginSteps.java:28)
 	at ✽.I enter login details &quot;invalidUser9&quot; and send OTP(file:///C:/Users/dell/Desktop/project/ThomasCookAutomation/ThomasCookAutomation/src/test/resources/features/login.feature:6)
 </pre></div></td>
-<td>37</td>
-<td>testRunners.RunCucumberTest@3eb738bb</td></tr>
-<tr>
-<td title='testRunners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: testRunners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with valid details", "User Registration on Thomas Cook website"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=139.0.7258.157)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [229105d1892a7368a9338231e5cc5200, sendKeysToElement {value=[Ljava.lang.CharSequence;@73b07fdb, id=f.884AE3E0B0291A20ADBAB9DD5C49C17F.d.56693E0E1C30C078A90B4EB28D89F34F.e.193}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53944/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (229105d1892a7368a9338231e5cc5200)] -&gt; id: regTitle]
-Session ID: 229105d1892a7368a9338231e5cc5200
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at pages.RegistrationPage.enterTitle(RegistrationPage.java:194)
-	at stepDefinitions.RegistrationSteps.i_select_title(RegistrationSteps.java:201)
-	at ✽.I select title &quot;Mr&quot;(file:///C:/Users/dell/Desktop/project/ThomasCookAutomation/ThomasCookAutomation/src/test/resources/features/registration.feature:26)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1281898591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1281898591'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=139.0.7258.157)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [229105d1892a7368a9338231e5cc5200, sendKeysToElement {value=[Ljava.lang.CharSequence;@73b07fdb, id=f.884AE3E0B0291A20ADBAB9DD5C49C17F.d.56693E0E1C30C078A90B4EB28D89F34F.e.193}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53944/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (229105d1892a7368a9338231e5cc5200)] -&gt; id: regTitle]
-Session ID: 229105d1892a7368a9338231e5cc5200
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at pages.RegistrationPage.enterTitle(RegistrationPage.java:194)
-	at stepDefinitions.RegistrationSteps.i_select_title(RegistrationSteps.java:201)
-	at ✽.I select title &quot;Mr&quot;(file:///C:/Users/dell/Desktop/project/ThomasCookAutomation/ThomasCookAutomation/src/test/resources/features/registration.feature:26)
-</pre></div></td>
-<td>16</td>
-<td>testRunners.RunCucumberTest@3eb738bb</td></tr>
-<tr>
-<td title='testRunners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: testRunners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Book Amazing Australia - Winter and verify Payment Failed", "ThomasCook Australia Tour Booking"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;contact details are already filled&apos; and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;contact details are already filled&quot;)
-public void contact_details_are_already_filled() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I am redirected to BookingSummary, I again click continue, and continue,&quot;)
-public void i_am_redirected_to_booking_summary_i_again_click_continue_and_continue() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2112111900", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2112111900'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;contact details are already filled&apos; and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@When(&quot;contact details are already filled&quot;)
-public void contact_details_are_already_filled() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;I am redirected to BookingSummary, I again click continue, and continue,&quot;)
-public void i_am_redirected_to_booking_summary_i_again_click_continue_and_continue() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>109</td>
-<td>testRunners.RunCucumberTest@3eb738bb</td></tr>
+<td>38</td>
+<td>testRunners.RunCucumberTest@2a5c8d3f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -260,13 +145,13 @@ public void i_am_redirected_to_booking_summary_i_again_click_continue_and_contin
 <tr>
 <td title='testRunners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: testRunners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open homepage and verify title contains Thomas Cook", "Thomas Cook Homepage checks"</td>
 <td></td>
-<td>17</td>
-<td>testRunners.RunCucumberTest@3eb738bb</td></tr>
+<td>18</td>
+<td>testRunners.RunCucumberTest@2a5c8d3f</td></tr>
 <tr>
 <td title='testRunners.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: testRunners.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid credentials", "User Login on ThomasCook"</td>
 <td></td>
-<td>87</td>
-<td>testRunners.RunCucumberTest@3eb738bb</td></tr>
+<td>88</td>
+<td>testRunners.RunCucumberTest@2a5c8d3f</td></tr>
 </table><p>
 </body>
 </html>

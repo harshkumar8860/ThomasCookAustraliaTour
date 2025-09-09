@@ -1,0 +1,9 @@
+<extentreports>
+  <configuration>
+    <theme>dark</theme>
+    <encoding>utf-8</encoding>
+    <protocol>https</protocol>
+    <documentTitle>Automation Test Report</documentTitle>
+    <reportName>ThomasCook Automation Results</reportName>
+  </configuration>
+</extentreports>

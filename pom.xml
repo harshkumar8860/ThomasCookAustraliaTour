@@ -27,7 +27,21 @@
       <version>4.23.0</version>
     </dependency>-->
     
-    <!-- TestNG -->
+    <!-- Extent Reports adapter for Cucumber -->
+	<dependency>
+	    <groupId>tech.grasshopper</groupId>
+	    <artifactId>extentreports-cucumber7-adapter</artifactId>
+	    <version>1.14.0</version>
+	</dependency>
+	
+	<!-- Extent Reports core -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>5.0.9</version>
+	</dependency>
+
+		<!-- TestNG -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -35,7 +49,7 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Cucumber (Java + TestNG) -->
+		<!-- Cucumber (Java + TestNG) -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-java</artifactId>
@@ -47,21 +61,21 @@
       <version>7.11.0</version>
     </dependency>
 
-    <!-- WebDriverManager -->
+		<!-- WebDriverManager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
       <version>5.4.1</version>
     </dependency>
 
-    <!-- ExtentReports -->
+		<!-- ExtentReports -->
     <dependency>
       <groupId>com.aventstack</groupId>
       <artifactId>extentreports</artifactId>
       <version>5.0.9</version>
     </dependency>
 
-    <!-- Apache POI for Excel -->
+		<!-- Apache POI for Excel -->
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi-ooxml</artifactId>
