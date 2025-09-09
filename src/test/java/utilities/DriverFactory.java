@@ -9,11 +9,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class DriverFactory {
     private static final ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-
     public static WebDriver getDriver() {
         return tlDriver.get();
     }
-
     public static void initDriver(String browser) {
         WebDriver driver;
         switch (browser.toLowerCase()) {
@@ -36,7 +34,6 @@ public class DriverFactory {
         tlDriver.set(driver);
         driver.manage().window().maximize();
     }
-
     public static void quitDriver() {
         WebDriver driver = tlDriver.get();
         if (driver != null) {
